@@ -14,7 +14,7 @@
         <li><a href="/memos/3">CSS</li> --}}
         @foreach ($memos as $memo)
             {{-- <li><a href="/memos/{{$memo->id}}">{{ $memo->title }}</li> --}}
-            <li><a href="{{ route("memos.show", $memo) }}">{{ $memo->title }}</li>
+            <li><a href="{{ route("memos.show", $memo) }}">{{ $memo->title }}</a></li>
         @endforeach
     </ul>
     
